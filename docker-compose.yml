@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  gaze_estimation:
+    build: .
+    volumes:
+      - ./input:/home/openvino/input
+      - ./output:/home/openvino/output
+      - ./main.py:/home/openvino/main.py
+      - ./models:/home/openvino/models
